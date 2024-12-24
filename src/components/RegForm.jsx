@@ -68,7 +68,7 @@ function RegForm() {
                     className={`w-full p-2 border rounded-md ${errors.email ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-blue-500`}
                     {...register('email', {
                         required: "Email is required",
-                        minLength: { value: 3, message: "Min length should be at least 3" },
+                        // minLength: { value: 3, message: "Min length should be at least 3" },
                         pattern: {
                             // value: /^[A-Za-z]+$/i,
                             // message: "should only contain letters",
