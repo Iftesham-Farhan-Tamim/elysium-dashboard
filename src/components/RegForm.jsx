@@ -16,7 +16,7 @@ function RegForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-lg mx-auto bg-white p-6 rounded-lg shadow-lg">
+        <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-lg mx-auto bg-green-50 p-6 rounded-lg shadow-lg">
             <div className="mb-4">
                 <label htmlFor="firstName" className="block text-lg font-medium text-gray-700">First Name:</label>
                 <input
@@ -59,7 +59,7 @@ function RegForm() {
                 <button
                     type="submit"
                     disabled={isSubmitting}
-                    className={`w-full py-2 px-4 bg-blue-500 text-white font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 ${isSubmitting ? 'bg-blue-300' : 'hover:bg-blue-600'}`}
+                    className={`w-full py-2 px-4 bg-green-500 text-white font-semibold rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ${isSubmitting ? 'bg-green-300' : 'hover:bg-green-600'}`}
                 >
                     {isSubmitting ? "Submitting..." : "Submit"}
                 </button>

@@ -15,7 +15,6 @@ function Navbar() {
         }
     };
 
-    // Apply the theme when the theme state changes
     useEffect(() => {
         localStorage.setItem("theme", theme);
         const localTheme = localStorage.getItem("theme");
@@ -27,8 +26,6 @@ function Navbar() {
     const toggleNavbar = () => {
         setIsMobileMenuOpen(!isMobileMenuOpen);
     };
-
-
 
     return (
         <nav className='border-b-2'>
@@ -93,7 +90,7 @@ function Navbar() {
                     </ul>
                 </div>
 
-                {/* Mobile Menu Button */}
+                {/* mobile menu button */}
                 <div className="lg:hidden flex items-center">
                     <button onClick={toggleNavbar}>
                         {isMobileMenuOpen ? (
