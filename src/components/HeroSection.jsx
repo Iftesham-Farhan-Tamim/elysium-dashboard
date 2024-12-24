@@ -31,7 +31,6 @@ import { firstBox, fourthBox, thirdBox, secondBox, zerobox } from "../constants"
 
 function HeroSection() {
 
-
     const [isOpen, setIsOpen] = React.useState(false);
     const dropdownItems = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
 
@@ -41,7 +40,6 @@ function HeroSection() {
 
     return (
         <section>
-
             <div className="div-1-main md:flex justify-between items-center m-12">
                 <div className="inside-1st flex items-center space-x-5">
                     <div>
@@ -75,11 +73,6 @@ function HeroSection() {
                     </button>
                 </div>
             </div>
-
-
-
-
-
             {/* Placeholder for future content */}
             <div className='md:flex justify-between items-center m-12 space-y-4 md:space-y-0'>
                 <div className='border-2 p-4 space-y-4 rounded-xl'>
@@ -119,15 +112,7 @@ function HeroSection() {
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
-
             {/* Placeholder for future content */}
-
             {/* <div className='flex m-12 '>
                 <div className='w-1/2 text-2xl'>
                     <p>Your next steps</p>
@@ -138,9 +123,7 @@ function HeroSection() {
                     <span className='bg-green-700 text-white rounded-full px-3'>3</span>
                 </div>
             </div> */}
-
             {/* Placeholder for future content */}
-
             <section className='md:m-12 m-3 md:flex md:space-x-4'>
                 <div className='md:w-1/2'>
 
@@ -149,7 +132,7 @@ function HeroSection() {
                     </div>
                     <div className='2-box flex justify-between items-center'>
                         {secondBox.map((option, index) => (
-                            <div key={index} className='border-2 p-4 space-y-2 rounded-xl pr-16'>
+                            <div key={index} className='border-2 p-4 space-y-2 rounded-xl md:pr-16'>
                                 <div className='flex text-gray-500'>
                                     <p className={`text-4xl ${option.icon2 === "red" ? "text-red-400" : "text-green-500"}`}>
                                         {option.icon}
@@ -172,16 +155,10 @@ function HeroSection() {
                             </div>
                         ))}
                     </div>
-
-
-
                     <div className='New bookings flex space-x-1.5 pt-7 items-center pb-7 '>
                         <p className='text-2xl'>New bookings</p>
                         <button className='bg-green-700 rounded-full px-3 text-white'>3</button>
                     </div>
-
-
-
                     <div className='3-profile border-2 rounded-xl md:p-6 p-4 space-y-8'>
                         {thirdBox.map((option, index) => (
                             <div key={index} className='flex justify-between items-center'>
@@ -206,10 +183,6 @@ function HeroSection() {
                         ))}
                     </div>
                 </div>
-
-
-
-
                 <div className='last-main-div md:w-1/2'>
                     <div className='last-main'>
 
@@ -262,12 +235,9 @@ function HeroSection() {
                                 </div>
                             ))}
                         </div>
-
                     </div>
                 </div>
-
             </section>
-
             <div></div>
         </section>
     );
