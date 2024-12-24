@@ -127,7 +127,7 @@ function HeroSection() {
             <section className='md:m-12 m-3 md:flex md:space-x-4'>
                 <div className='md:w-1/2'>
 
-                    <div className='w-1/2 text-2xl pb-8'>
+                    <div className='w-1/2 text-2xl pb-7'>
                         <p>Your next steps</p>
                     </div>
                     <div className='2-box flex justify-between items-center'>

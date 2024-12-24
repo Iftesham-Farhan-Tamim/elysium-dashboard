@@ -94,9 +94,9 @@ function Navbar() {
                 <div className="lg:hidden flex items-center">
                     <button onClick={toggleNavbar}>
                         {isMobileMenuOpen ? (
-                            <i className="ri-close-line text-2xl"></i> 
+                            <i className="ri-close-line text-2xl"></i>
                         ) : (
-                            <i className="ri-menu-3-line text-2xl"></i> 
+                            <i className="ri-menu-3-line text-2xl"></i>
                         )}
                     </button>
                 </div>
