@@ -52,7 +52,7 @@ function Navbar() {
                 </div>
 
 
-                <div cnlassName="dark-btn">
+                <div cnlassName="theme-btn">
                     <label className="swap swap-rotate">
                         <input type="checkbox"
                             onChange={handleToggle}
