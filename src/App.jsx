@@ -3,7 +3,7 @@
 // import './App.css'
 import { useState, useEffect } from 'react'
 import Navbar from './components/Navbar'
-import HeroSection from './components/heroSection'
+import HeroSection from './components/HeroSection'
 import { ThemeProvider } from './contexts/theme'
 import RegForm from './components/RegForm'
 
