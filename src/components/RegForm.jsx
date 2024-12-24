@@ -46,6 +46,8 @@ function RegForm() {
                     id="lastName"
                     className={`w-full p-2 border rounded-md ${errors.lastName ? 'border-red-500' : 'border-gray-300'} focus:outline-none focus:ring-2 focus:ring-blue-500`}
                     {...register('lastName', {
+                        required: "First Name is required",
+                        minLength: { value: 3, message: "Min length should be at least 3" },
                         pattern: {
                             value: /^[A-Za-z]+$/i,
                             message: "Last Name should only contain letters",
