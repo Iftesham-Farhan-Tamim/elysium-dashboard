@@ -25,6 +25,10 @@ function RegForm() {
                     {...register('firstName', {
                         required: "First Name is required",
                         minLength: { value: 3, message: "Min length should be at least 3" },
+                        pattern: {
+                            value: /^[A-Za-z]+$/i,
+                            message: "Fast Name should only contain letters",
+                        }
                     })}
                 />
                 {errors.firstName && <p className="mt-1 text-sm text-red-500">{errors.firstName.message}</p>}
