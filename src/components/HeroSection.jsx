@@ -58,7 +58,7 @@ function HeroSection() {
                             className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-full inline-flex items-center transition-colors"
                             onClick={toggleDropdown}>
                             Last Month
-                            <i class="ri-arrow-down-s-line"></i>
+                            <p className='text-1xl'><i class="ri-arrow-down-s-line"></i></p>
                         </button>
                         <ul className={`absolute ${isOpen ? 'block' : 'hidden'} bg-white text-gray-800 pt-1 min-w-[9.1rem] cursor-pointer`}>
                             {dropdownItems.map((item, index) => (
