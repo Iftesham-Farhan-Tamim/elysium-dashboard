@@ -52,7 +52,7 @@ function HeroSection() {
                     </div>
                 </div>
 
-                <div className="flex items-center space-x-5 pt-16 md:pt-0">
+                <div className="flex items-center space-x-5 pt-16 md:pt-0 ">
                     <div className="relative">
                         <button
                             className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-full inline-flex items-center transition-colors"
@@ -62,7 +62,7 @@ function HeroSection() {
                         </button>
                         <ul className={`absolute ${isOpen ? 'block' : 'hidden'} bg-white text-gray-800 pt-1 min-w-[9.1rem] cursor-pointer`}>
                             {dropdownItems.map((item, index) => (
-                                <li key={index} className="hover:bg-gray-200 py-2 px-4">
+                                <li key={index} className="hover:bg-gray-200 py-2 px-4 transition-colors">
                                     {item}
                                 </li>
                             ))}
@@ -75,44 +75,52 @@ function HeroSection() {
             </div>
             {/* Placeholder for future content */}
             <div className='md:flex justify-between items-center m-12 space-y-4 md:space-y-0'>
-                <div className='border-2 p-4 space-y-4 rounded-xl'>
-                    <div className='flex space-x-24 text-gray-500'>
+                <div className='border-2 p-4 space-y-4 rounded-xl mr-8 ml-8 md:mr-0 md:ml-0'>
+                    <div className='flex md:space-x-24 justify-between text-gray-500'>
                         <p>Check'ins</p>
-                        <p className='text-3xl text-yellow-500'><i class="ri-key-2-fill"></i></p>
+                        <p className='text-3xl text-yellow-500'>
+                            <i class="ri-key-2-fill"></i>
+                        </p>
                     </div>
                     <div>
                         <p className='text-2xl'>12</p>
                     </div>
                 </div>
-                <div className='border-2 p-4 space-y-4 rounded-xl'>
-                    <div className='flex space-x-24 text-gray-500'>
+                <div className='border-2 p-4 space-y-4 rounded-xl mr-8 ml-8 md:mr-0 md:ml-0'>
+                    <div className='flex md:space-x-24 justify-between text-gray-500'>
                         <p>Check'outs</p>
-                        <p className='text-3xl text-green-700'><i class="ri-shopping-bag-4-fill"></i></p>
+                        <p className='text-3xl text-green-700'>
+                            <i class="ri-shopping-bag-4-fill"></i>
+                        </p>
                     </div>
                     <div>
                         <p className='text-2xl'>32</p>
                     </div>
                 </div>
-                <div className='border-2 p-4 space-y-4 rounded-xl'>
-                    <div className='flex space-x-24 text-gray-500'>
+                <div className='border-2 p-4 space-y-4 rounded-xl mr-8 ml-8 md:mr-0 md:ml-0'>
+                    <div className='flex md:space-x-24 justify-between text-gray-500'>
                         <p>Earnings</p>
-                        <p className='text-3xl text-green-700'><i class="ri-wallet-3-fill"></i></p>
+                        <p className='text-3xl text-green-700'>
+                            <i class="ri-wallet-3-fill"></i>
+                        </p>
                     </div>
                     <div>
                         <p>$ <span className='text-2xl'>4.923</span><span className='text-gray-500'>,68</span></p>
                     </div>
                 </div>
-                <div className='border-2 p-4 space-y-4 rounded-xl'>
-                    <div className='flex space-x-24 text-gray-500'>
+                <div className='border-2 p-4 space-y-4 rounded-xl mr-8 ml-8 md:mr-0 md:ml-0'>
+                    <div className='flex md:space-x-24 justify-between text-gray-500'>
                         <p>Reviews</p>
-                        <p className='text-3xl text-yellow-500'><i class="ri-bar-chart-grouped-line"></i></p>
+                        <p className='text-3xl text-yellow-500'>
+                            <i class="ri-bar-chart-grouped-line"></i>
+                        </p>
                     </div>
                     <div>
                         <p><span className='text-2xl'>4.5</span><span className='text-gray-500'>(1400)</span></p>
                     </div>
                 </div>
             </div>
-            {/* Placeholder for future content */}
+            {/* placeholder for future content */}
             {/* <div className='flex m-12 '>
                 <div className='w-1/2 text-2xl'>
                     <p>Your next steps</p>
@@ -123,7 +131,7 @@ function HeroSection() {
                     <span className='bg-green-700 text-white rounded-full px-3'>3</span>
                 </div>
             </div> */}
-            {/* Placeholder for future content */}
+            {/* placeholder for future content */}
             <section className='md:m-12 m-3 md:flex md:space-x-4'>
                 <div className='md:w-1/2'>
 
