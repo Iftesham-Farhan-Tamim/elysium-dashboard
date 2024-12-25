@@ -36,12 +36,12 @@ function Navbar() {
     return (
         <nav className='border-b-2'>
             <div className='flex justify-between items-center m-4'>
-                {/* Logo Section */}
+                {/* logo section */}
                 <div className='inline-block'>
                     <a href="#">Logo</a>
                 </div>
 
-                {/* Desktop Menu */}
+                {/* desktop menu */}
                 <div className='hidden lg:flex'>
                     <ul className='flex space-x-3'>
                         {navItems.map((item, index) => (
@@ -57,7 +57,7 @@ function Navbar() {
                     </ul>
                 </div>
 
-                {/* Theme Toggle */}
+                {/* theme toggle */}
                 <div className="theme-btn">
                     <label className="swap swap-rotate">
                         <input type="checkbox"
@@ -82,7 +82,7 @@ function Navbar() {
                     </label>
                 </div>
 
-                {/* Right-side Icons and Profile */}
+                {/* right-side icons and pofile */}
                 <div className='hidden lg:flex items-center'>
                     <ul className='flex space-x-6'>
                         <li className='text-2xl cursor-pointer text-gray-400'>
@@ -91,22 +91,21 @@ function Navbar() {
                         <li className='text-2xl cursor-pointer text-gray-400'>
                             <i className="ri-notification-3-fill"></i>
                         </li>
-                        {/* Profile image */}
+                        {/* profile image */}
                         <div className="relative ">
                             <img
                                 src="/src/assets/_MG_6293.jpg"
                                 alt="Profile"
                                 className="w-10 h-8 rounded-full cursor-pointer"
-                                onClick={handleProfileClick} // toggle dropdown visibility
+                                onClick={handleProfileClick} 
                             />
-                            {/* how profile dropdown when openProfile is true */}
                             {openProfile && <DropDownProfile onClose={() => setOpenProfile(false)} />}
                         </div>
                     </ul>
 
                 </div>
 
-                {/* Mobile menu button */}
+                {/* mobile menu button */}
                 <div className="lg:hidden flex items-center">
                     <button onClick={toggleNavbar}>
                         {isMobileMenuOpen ? (
@@ -118,7 +117,7 @@ function Navbar() {
                 </div>
             </div>
 
-            {/* Mobile menu */}
+            {/* mobile menu */}
             {isMobileMenuOpen && (
                 <div className="fixed right-0 z-20 bg-gray-600 w-full p-12 flex flex-col justify-center items-center lg:hidden">
                     <ul className="md:space-y-6">
@@ -131,7 +130,7 @@ function Navbar() {
                         ))}
                     </ul>
 
-                    {/* Additional Icons */}
+                    {/* additional icons */}
                     <div className="flex flex-col space-y-4 mt-6">
                         <p className='text-2xl cursor-pointer text-gray-400'>
                             <i className="ri-search-2-line"></i>

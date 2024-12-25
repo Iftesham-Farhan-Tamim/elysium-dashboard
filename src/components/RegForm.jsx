@@ -16,7 +16,7 @@ function RegForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-lg mx-auto bg-green-50 p-6 rounded-lg shadow-lg">
+        <form onSubmit={handleSubmit(onSubmit)} className="w-full max-w-lg mx-auto bg-green-50 p-6 border-2 border-green-200 rounded-xl shadow-xl">
             <div className="mb-5">
                 <label htmlFor="firstName" className="block text-lg font-medium text-gray-700 mb-1">First Name:</label>
                 <input

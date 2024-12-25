@@ -46,13 +46,13 @@ function HeroSection() {
                         <img src="/src/assets/_MG_6293.jpg" alt="Profile" className="w-12 h-10 rounded-full" />
                     </div>
 
-                    <div>
+                    <div className=''>
                         <h1 className="text-3xl font-medium">Good morning!</h1>
                         <p className="text-gray-600">Here's an overview of your properties</p>
                     </div>
                 </div>
 
-                <div className="flex items-center space-x-5 pt-16 md:pt-0 ">
+                <div className="flex items-center space-x-5 pt-16 md:pt-0 ml-7">
                     <div className="relative">
                         <button
                             className="bg-gray-200 hover:bg-gray-300 text-gray-800 font-medium py-2 px-4 rounded-full inline-flex items-center transition-colors"
@@ -73,7 +73,7 @@ function HeroSection() {
                     </button>
                 </div>
             </div>
-            {/* Placeholder for future content */}
+            {/*  */}
             <div className='md:flex justify-between items-center m-12 space-y-4 md:space-y-0'>
                 <div className='border-2 p-4 space-y-4 rounded-xl mr-8 ml-8 md:mr-0 md:ml-0'>
                     <div className='flex md:space-x-24 justify-between text-gray-500'>
@@ -120,7 +120,7 @@ function HeroSection() {
                     </div>
                 </div>
             </div>
-            {/* placeholder for future content */}
+            {/*  */}
             {/* <div className='flex m-12 '>
                 <div className='w-1/2 text-2xl'>
                     <p>Your next steps</p>
@@ -131,7 +131,7 @@ function HeroSection() {
                     <span className='bg-green-700 text-white rounded-full px-3'>3</span>
                 </div>
             </div> */}
-            {/* placeholder for future content */}
+            {/*  */}
             <section className='md:m-12 m-3 md:flex md:space-x-4'>
                 <div className='md:w-1/2'>
 
