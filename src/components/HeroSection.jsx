@@ -1,6 +1,7 @@
 import React from 'react';
 import { Progress } from "@material-tailwind/react";
 import { firstBox, fourthBox, thirdBox, secondBox, zerobox } from "../constants";
+import user1 from "../assets/_MG_6293.jpg";
 
 // const Dropdown = () => {
 //     const [isOpen, setIsOpen] = React.useState(false);
@@ -43,7 +44,8 @@ function HeroSection() {
             <div className="div-1-main md:flex justify-between items-center m-12">
                 <div className="inside-1st flex items-center space-x-5">
                     <div>
-                        <img src="/src/assets/_MG_6293.jpg" alt="Profile" className="w-12 h-10 rounded-full" />
+                        {/* <img src="/src/assets/_MG_6293.jpg" alt="Profile" className="w-12 h-10 rounded-full" /> */}
+                        <img src={user1} alt="Profile" className="w-12 h-10 rounded-full" />
                     </div>
 
                     <div className=''>

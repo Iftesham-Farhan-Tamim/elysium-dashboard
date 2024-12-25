@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 // import ThemeBtn from './ThemeBtn';
 import { navItems } from "../constants";
 import DropDownProfile from './DropDownProfile';
+import user1 from "../assets/_MG_6293.jpg";
 
 function Navbar() {
     const [theme, setTheme] = useState(
@@ -94,7 +95,8 @@ function Navbar() {
                         {/* profile image */}
                         <div className="relative ">
                             <img
-                                src="/src/assets/_MG_6293.jpg"
+                                // src="/src/assets/_MG_6293.jpg"
+                                src={user1}
                                 alt="Profile"
                                 className="w-10 h-8 rounded-full cursor-pointer"
                                 onClick={handleProfileClick} 
